@@ -208,7 +208,7 @@ def get_top_bigrams(text, n=None):
     list: A list of bigrams.
     """
     bigrams = ngrams(text, 2)
-    return [bigram for bigram in bigrams]
+    return [' '.join(bigram) for bigram in bigrams]
 
 def extract_bigrams(df):
     """
